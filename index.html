@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Julius Sans One:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <!--##########################################-<HOME>-##############################################-->
+    <div class="home" id="home">
+
+      <!--=========================================NAVBAR===============================================-->
+      <nav class="nav-bar">
+        <div class="main-nav">
+            <img class="logo-icon" id="logo" alt="" src="./public/Medispa Logo-01_website.png" />
+            <div class="nav-links">
+              <a href="#" id="home-link">HOME</a>
+              <a href="#" id="about-us-link">ABOUT US</a>
+              <a href="#services" id="services-link">SERVICES</a>
+              <a href="#" id="contact-us-link">CONTACT US</a>
+           </div>
+        </div>
+        <div class="navlinks" id="login">LOGIN</div>
+      </nav>
+
+      <!--=========================================QUOTE===============================================-->
+      <h1 class="home-quote">
+        <p class="relaxation-experience-to">RELAXATION EXPERIENCE TO</p>
+        <p class="relaxation-experience-to">YOUR HOME OR OFFICE</p>
+      </h1>
+
+      <!--====================================BOOKING SECTION==========================================-->
+      <form class="booking-section" action="search_results.php" method="GET">
+        <input type="text" id="location-input" name="location" placeholder=" Location" required><br><br>
+        <input type="text" id="services-input" name="services" placeholder=" Services" required><br><br>
+        <input type="date" id="date-input" name="date" ><br><br>
+
+        <input id="search-button" type="submit" name="search" value="Search">
+      </form>
+    </div>
+    <!--=========================################-</HOME>-##############================================-->
+
+
+
+    <!--########################################-<SERVICES>-#############################################-->
+    <div class="services" id="services">
+
+      <!--==========================================TITLE================================================-->
+      <div class="header-services">
+        <h1 class="header-title">Our Services</h1>
+        <div class="filler-text">
+          <div>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit sum quia dolor sit amet, cons</div>
+          <p>beatae vitae dicta sunt explicabo. Nemo enim ipsam dolor sit amet, consectetur, adipisci velit sum quia do</p>
+        </div> 
+      </div>
+
+
+
+
+      <div class="massage-treatments" id="services-panel">
+      </div>
+      <!--=======================================SECTION-ONE=============================================-->
+      <div class="services-section">
+        <!------------------------------------Massage Treatments------------------------------------------->
+        <div class="services-panel" id="massage-treatments">
+          <img class="services-picture" alt="Massage Treatments" src="./public/servicespicture1@2x.png"/>
+          <b>MASSAGE TREATMENTS</b>
+          <button class="services-button" id="massage-treatment-button"></button>
+          <p class="services-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam nostrum minus modi dolor odio inventore reiciendis veritatis tenetur. Nihil quis ab exercitationem.</p>
+          <button data-modal-target="#massage-treatments-modal" class="services-more-button" >Expand</button>
+        </div>
+        <!-------------------------------------Nail Treatments--------------------------------------------->
+        <div class="services-panel" id="nail-treatments">
+          <img class="services-picture" alt="Nail Treatments" src="./public/servicespicture2@2x.png"/>
+          <b>NAIL TREATMENTS</b>
+          <button class="services-button" id="nail-treatment-button"></button>
+          <p class="services-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam nostrum minus modi dolor odio inventore reiciendis veritatis tenetur. Nihil quis ab exercitationem.</p>
+          <button data-modal-target="#nail-treatments-modal" class="services-more-button">Expand</button>
+        </div>
+        <!-------------------------------------B&D Treatments----------------------------------------------->
+        <div class="services-panel" id="body-and-facial-treatments">
+          <img class="services-picture" alt="Body and Facial Treatments" src="./public/servicespicture3@2x.png"/>
+          <b>BODY & FACIAL<br>TREATMENTS</b>
+          <button class="services-button" id="body-and facial-button"></button>
+          <p class="services-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam nostrum minus modi dolor odio inventore reiciendis veritatis tenetur. Nihil quis ab exercitationem.</p>
+          <button data-modal-target="#body-and-facial-treatments-modal" class="services-more-button" >Expand</button>
+        </div>
+      </div>
+      <!----------------------------------------Filler Text--------------------------------------------------->
+      <div class="filler-text sub-filler">
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+        <p>beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+      </div>
+
+      <!--=======================================SECTION-TWO===============================================-->
+      <div class="services-section">
+        <!--------------------------------Physical Theraphy Treatments--------------------------------------->
+        <div class="services-panel" id="physical-theraphy-treatments">
+          <img class="services-picture" alt="Physical Theraphy Treatments" src="./public/servicespicture4@2x.png"/>
+          <b>PHYSICAL THERAPY<br>TREATMENTS</b>
+          <button class="services-button" id="physical-theraphy-button"></button>
+          <p class="services-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam nostrum minus modi dolor odio inventore reiciendis veritatis tenetur. Nihil quis ab exercitationem.</p>
+          <button data-modal-target="#physical-theraphy-treatments-modal" class="services-more-button" >Expand</button>
+        </div>
+        <!---------------------------------------C&D Services----------------------------------------------->
+        <div class="services-panel" id="c&d-services">
+          <img class="services-picture" alt="Cleaning and Disinfection Services" src="./public/servicespicture5@2x.png"/>
+          <b>CLEANING AND<br>DISINFECTION SERVICES</b>
+          <button class="services-button" id="c&d-services-button"></button>
+          <p class="services-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam nostrum minus modi dolor odio inventore reiciendis veritatis tenetur. Nihil quis ab exercitationem.</p>
+          <button data-modal-target="#c-and-d-services-modal" class="services-more-button">Expand</button>
+        </div>
+        <!--------------------------------------Swabbing Services------------------------------------------->
+        <div class="services-panel" id="swabbing-services">
+          <img class="services-picture" alt="Swabbing Services" src="./public/servicespicture6@2x.png"/>
+          <b>SWABBING SERVICES</b>
+          <button class="services-button" id="swabbing-services-button"></button>
+          <p class="services-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam nostrum minus modi dolor odio inventore reiciendis veritatis tenetur. Nihil quis ab exercitationem.</p>
+          <button data-modal-target="#swabbing-services-modal" class="services-more-button" >Expand</button>
+        </div>
+      </div>
+    </div>
+
+    <!--=========================================-SERVICES MODALS-=============================================-->
+
+    <div class="modal" id="massage-treatments-modal">
+      <div class="modal-header">
+        <div class="-modal-header-title">Massage Treatments</div>
+        <button data-close-button class="close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h1></h1>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="modal" id="nail-treatments-modal">
+      <div class="modal-header">
+        <div class="-modal-header-title">Nail Treatments</div>
+        <button data-close-button class="close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h1></h1>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="modal" id="body-and-facial-treatments-modal">
+      <div class="modal-header">
+        <div class="-modal-header-title">Body & Facial Treatments</div>
+        <button data-close-button class="close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h1></h1>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="modal" id="physical-theraphy-treatments-modal">
+      <div class="modal-header">
+        <div class="-modal-header-title">Physical Theraphy Treatments</div>
+        <button data-close-button class="close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h1></h1>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="modal" id="c-and-d-services-modal">
+      <div class="modal-header">
+        <div class="-modal-header-title">Cleaning & Disinfection Services</div>
+        <button data-close-button class="close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h1></h1>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="modal" id="swabbing-services-modal">
+      <div class="modal-header">
+        <div class="-modal-header-title">Swabbing Services</div>
+        <button data-close-button class="close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h1></h1>
+        <p></p>
+      </div>
+    </div>  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!--==========================################-</SERVICES>-##############==================================-->
+
+
+    <!--==========================################-<REVIEWS>-##############==================================-->
+    <div class="reviews">
+
+    </div>
+    <!--==========================################-</REVIEWS>-##############==================================-->
+
+    <!--==========================################-<LOCATIONS>-##############==================================-->
+    <div class="locations">
+      <img id="peak" src="public/mountain.png">
+    </div>
+    <!--==========================################-</LOCATIONS>-##############==================================-->
+
+
+
+
+    <!--==========================################-<FOOTER>-##############==================================-->
+    <div class="footer">
+
+      <div class="first-footer-panel">
+
+        <div class="first-left-footer-panel">
+          <img id="footer-logo" src="public/footer-logo.png" alt="footer-logo">
+          <p><a class="footer-offers" href="#">Careers</a></p>
+          <p><a class="footer-offers" href="#">Our Clinic</a></p>
+          <p><a class="footer-offers" href="#">Medi News</a></p>
+
+          <div class="footer-social-links">
+            <a href="#"><img class="social-links" src="public/fb-logo.png" alt="facebook-logo"></a>
+            <a href="#"><img class="social-links" src="public/insta-logo.png" alt="instgagram"></a>
+            <a href="#"><img class="social-links" src="public/twt-logo.png" alt="pinterest"></a>
+          </div>
+        </div>
+  
+        <div class="first-right-footer-panel">
+          <!-- <label class="email-label">Stay Updated</label> -->
+          <input class="email-box" type="email" placeholder="Enter email adrress">
+        </div>
+      </div>
+
+      <div class="footer-separator"></div>
+
+      <div class="second-footer-panel">
+          <div class="second-left-footer-panel">
+          </div>
+    
+          <div class="second-right-footer-panel">
+          </div>
+      </div>
+      
+
+
+
+    </div>
+    <!--==========================################-<FOOTER>-##############==================================-->
+    
+    <div id="overlay"></div>
+
+  </body>
+  <script src="script.js"></script>
+</html>

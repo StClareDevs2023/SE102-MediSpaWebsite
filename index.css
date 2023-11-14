@@ -1,0 +1,415 @@
+*{
+  box-sizing: border-box;
+  margin: 0 ;
+  /* border: 1px solid red; */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*###################-HOME-############################*/
+.home {
+  width: 100%;
+  background-image: url(./public/backgroundhome@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  height: 1000px;
+  font-size: 20px;
+  color: #395351;
+  font-family: Inter;
+}
+/*--=================-NAVBAR-========================--*/
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center ;
+  align-items: center;
+  padding: 30px 160px;
+}
+
+.main-nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:60px;
+  align-items: center;
+}
+
+#logo{
+  width: 85px;
+  height: 70px;
+}
+
+.nav-links{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:60px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #395351;
+  cursor: pointer;
+}
+
+.nav-links a:hover{
+  color:  #3fafbd;
+}
+
+#home-link{
+  color: white;
+}
+
+#login{
+  background-color: #3fafbd;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(165, 161, 161, 0.2);
+}
+/*--===================-HOME-TITLE-==========================--*/
+.home-quote {
+  margin: 0;
+  position: absolute;
+  top: 210px;
+  left: 255px;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Julius Sans One";
+  color: #3fafbd;
+  -webkit-text-stroke: 1px #3fafbd;
+}
+
+/*--==================-BOOKING-SECTION-=====================--*/
+.booking-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:2px;
+  margin-top: 400px;
+  cursor: text;
+}
+
+#services-input{
+  width: 250px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  cursor: text;
+}
+#location-input,#date-input{
+  width: 200px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  cursor: text;
+}
+#search-button{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  background-color: #3fafbd;
+  color: white;
+  width: 200px;
+  font-size: 16px;
+}
+
+
+
+
+
+/*########################-SERVICES-##########################*/
+.services{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #44919b;
+  font-family: Inter;
+  padding: 50px;
+  cursor: default;
+}
+
+/*--===================-SERVICES HEADER-===================--*/
+.header-services{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.header-title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: Actor;
+  color: #3fafbd;
+}
+
+/*--==================-SERVICES SECTION-==================--*/
+.services-section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: center;
+  gap: 120px;
+  font-size: 20px;
+  color: #3fafbd;
+  text-align: center;
+}
+
+.services-panel{
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 100px;
+  
+}
+/*---------------------Hover Effects-------------------------*/
+/* .services-panel:hover b{
+  display: none;
+} */
+.services-panel:hover .services-picture{
+  display: none;
+  justify-content: flex-start;
+  /* transition: all 4s ease-in-out; */
+}
+.services-panel:hover .services-button{
+  display: none;
+}
+
+.services-panel:hover{
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.services-panel:hover .services-more-button{
+  display: block;
+  cursor: pointer;
+}
+
+.services-panel:hover .services-description{
+  display: block;
+}
+
+
+
+
+
+
+
+.services-picture{
+  width: 300px;
+}
+
+.services-description{
+  display: none;
+}
+
+.filler-text{
+  margin: 20px 10px;
+}
+
+.filler-text p:nth-child(2){
+  margin-top: 10px;
+}
+
+.sub-filler{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-button{
+  background-color: #BDBDBD;
+  height: 5px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services-more-button{
+  width: 100px;
+  height: 40px;
+  display: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*--==================-SERVICES MODALS-==================--*/
+
+.modal{  
+  width: 1200px;
+  height: 800px;
+  max-height: 80%;
+  max-width: 80%;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 400ms ease-in-out;
+  border: 1px solid black;
+  z-index: 10;
+
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 20px;
+  padding: 20px; 
+  
+}
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-header .modal-header-title{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-modal{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+#overlay{
+  position: fixed;
+  opacity: 0; 
+  transition: 400ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*########################-REVIEWS-##########################*/
+.reviews{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(221, 235, 235);
+
+}
+
+
+.locations{
+  height: 100vh;
+  width: 100%;
+  background-color: #3FAFBD;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+}
+
+#peak{
+  height: 40px;
+  width: 100%;
+}
+
+/*########################-footer-##########################*/
+.footer{
+  background-color: #ECF4F4;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #a89e9e;
+}
+
+#footer-logo{
+  height: 80px;
+}
+
+.footer-offers{
+  text-decoration: none;
+  color: #a89e9e;
+}
+
+.social-links{
+  height: 22px;
+}
+
+.email-box{
+  border: 1px solid rgb(238, 233, 233);
+  height: 25px;
+}
+
+.first-footer-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+.footer-separator{
+  margin-top: 10px;
+  background-color:  rgb(221, 235, 235);
+  height: 1.2vh;
+  width: 100%;
+}
