@@ -8,7 +8,7 @@ html{
   scroll-behavior: smooth;
 }
 
-/*###################-HOME-############################*/
+/*###################-HOME-##########################################################*/
 .home {
   width: 100%;
   background-image: url(./public/backgroundhome@2x.png);
@@ -98,7 +98,6 @@ html{
   margin-top: 400px;
   cursor: text;
 }
-
 #services-input{
   width: 250px;
   border: none;
@@ -127,7 +126,7 @@ html{
 
 
 
-/*########################-SERVICES-##########################*/
+/*########################-SERVICES-##########################################################*/
 .services{
   width: 100%;
   height: 100%;
@@ -215,9 +214,6 @@ html{
 
 
 
-
-
-
 .services-picture{
   width: 300px;
 }
@@ -280,7 +276,6 @@ html{
   border: none;
   border-radius: 20px;
   padding: 20px; 
-  
 }
 
 .modal.active{
@@ -307,60 +302,62 @@ html{
 }
 
 
-#overlay{
-  position: fixed;
-  opacity: 0; 
-  transition: 400ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  pointer-events: none;
-}
-
-#overlay.active{
-  opacity: 1;
-  pointer-events: all;
-}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*########################-REVIEWS-##########################*/
+/*########################-REVIEWS-######################################################*/
 .reviews{
+  background-color: rgb(221, 235, 235);
   height: 100vh;
   width: 100%;
-  background-color: rgb(221, 235, 235);
+  
 
 }
 
 
+
+
+
+
+/*##########################-ABOUT-#######################################################*/
+
+
+
+
+
+
+
+
+
+/*#######################-BOOKING GUIDE-################################################*/
+
+
+
+
+
+
+
+
+
+/*######################-DISPATCH AREA-################################################*/
+
+
+ 
+
+
+
+
+
+
+/*########################-LOCATIONS-##################################################*/
 .locations{
+  background-color: #3FAFBD;
   height: 100vh;
   width: 100%;
-  background-color: #3FAFBD;
+
   display: flex;
   align-items: end;
   justify-content: flex-end;
@@ -371,7 +368,13 @@ html{
   width: 100%;
 }
 
-/*########################-footer-##########################*/
+
+
+
+
+
+
+/*########################-FOOTER-####################################################*/
 .footer{
   background-color: #ECF4F4;
   height: 35vh;
@@ -412,4 +415,27 @@ html{
   background-color:  rgb(221, 235, 235);
   height: 1.2vh;
   width: 100%;
+}
+
+
+
+
+
+/*########################-OTHERS-####################################################*/
+
+#overlay{
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0; 
+  transition: 400ms ease-in-out;
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
 }
