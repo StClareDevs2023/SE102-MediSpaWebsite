@@ -377,30 +377,13 @@ html{
 /*########################-FOOTER-####################################################*/
 .footer{
   background-color: #ECF4F4;
-  height: 35vh;
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   color: #a89e9e;
-}
-
-#footer-logo{
-  height: 80px;
-}
-
-.footer-offers{
-  text-decoration: none;
-  color: #a89e9e;
-}
-
-.social-links{
-  height: 22px;
-}
-
-.email-box{
-  border: 1px solid rgb(238, 233, 233);
-  height: 25px;
+  font-family: Inter;
 }
 
 .first-footer-panel {
@@ -408,14 +391,95 @@ html{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 30px;
 } 
 
 .footer-separator{
   margin-top: 10px;
   background-color:  rgb(221, 235, 235);
-  height: 1.2vh;
+  height: 10px;
   width: 100%;
 }
+
+.footer-logo{
+  margin-bottom: 15px;
+}
+
+#footer-logo-header{
+  font-family: Inter;
+  font-size: 48px;
+  color: #56C1C2;
+}
+
+#footer-logo-p{
+  font-family: Inter;
+  font-size: 17px;
+  margin-left: 1px;
+}
+
+.footer-offers-parent{
+  padding-bottom: 7px;
+}
+
+.footer-offers{
+  text-decoration: none;
+  color: #a89e9e;
+  margin-left: 1.1px;
+}
+
+
+.footer-social-links{
+  margin-top: 10px;
+}
+
+.social-links{
+  height: 30px;
+  margin-right: 12px;
+}
+
+
+
+
+.email-news-text{
+  font-family: Inter;
+  color: #8a8787;
+  margin-top: 70px;
+}
+
+.email-box{
+  background:transparent;
+  border: 1px solid#8a8787;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 0px;
+  width: 200px;
+}
+
+.email-button{
+  height: 40px;
+  border: 1px solid #8a8787;
+  cursor: pointer;
+  background:transparent;
+  margin: 0;
+  padding: 0 10px;
+  color: #8a8787;
+}
+
+
+.second-footer-panel{
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.second-footer-panel a {
+  text-decoration: none;
+  color: #8a8787;
+}
+
+
 
 
 
