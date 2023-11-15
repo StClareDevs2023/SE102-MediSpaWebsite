@@ -211,9 +211,6 @@ html{
   display: block;
 }
 
-
-
-
 .services-picture{
   width: 300px;
 }
@@ -414,12 +411,6 @@ html{
   padding: 0 30px;
 } 
 
-.footer-separator{
-  margin-top: 10px;
-  background-color:  rgb(221, 235, 235);
-  height: 10px;
-  width: 100%;
-}
 
 .footer-logo{
   margin-bottom: 15px;
@@ -445,6 +436,10 @@ html{
   text-decoration: none;
   color: #a89e9e;
   margin-left: 1.1px;
+}
+
+.footer-offers:hover{
+  color: #8a8181;
 }
 
 
@@ -486,6 +481,14 @@ html{
   color: #8a8787;
 }
 
+
+.footer-separator{
+  margin-top: 10px;
+  background-color:  rgb(221, 235, 235);
+  height: 10px;
+  width: 100%;
+  
+}
 
 .second-footer-panel{
   display: flex;
