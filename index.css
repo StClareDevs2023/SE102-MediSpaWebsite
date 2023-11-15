@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
   margin: 0 ;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html{
@@ -310,11 +310,10 @@ html{
 
 /*########################-REVIEWS-######################################################*/
 .reviews{
-  background-color: rgb(221, 235, 235);
+  background-color: rgb(233, 241, 241);
   height: 100vh;
   width: 100%;
-  
-
+  color: #8a8787;
 }
 
 
@@ -324,7 +323,12 @@ html{
 
 /*##########################-ABOUT-#######################################################*/
 
-
+.about{
+  background-color: rgb(221, 235, 235);
+  height: 100vh;
+  width: 100%;
+  color: #8a8787;
+}
 
 
 
@@ -334,7 +338,12 @@ html{
 
 /*#######################-BOOKING GUIDE-################################################*/
 
-
+.booking-guide{
+  background-color: #3FAFBD;
+  height: 100vh;
+  width: 100%;
+  color: #8a8787;
+}
 
 
 
@@ -344,7 +353,12 @@ html{
 
 /*######################-DISPATCH AREA-################################################*/
 
-
+.dispatch-area{
+  background-color: rgb(221, 235, 235);
+  height: 100vh;
+  width: 100%;
+  color: #8a8787;
+}
  
 
 
@@ -357,7 +371,19 @@ html{
   background-color: #3FAFBD;
   height: 100vh;
   width: 100%;
+  color: #8a8787;
+}
 
+
+
+
+
+
+/*########################-FOOTER-####################################################*/
+.footer-design{
+  background-color: #3FAFBD;
+  height: 50px;
+  width: 100%;
   display: flex;
   align-items: end;
   justify-content: flex-end;
@@ -369,12 +395,6 @@ html{
 }
 
 
-
-
-
-
-
-/*########################-FOOTER-####################################################*/
 .footer{
   background-color: #ECF4F4;
   height: 300px;
